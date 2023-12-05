@@ -31,18 +31,15 @@ namespace MagicVilla_VillaAPI.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Amenity")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Details")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -70,7 +67,7 @@ namespace MagicVilla_VillaAPI.Migrations
                         {
                             Id = 1,
                             Amenity = "",
-                            DateCreated = new DateTime(2023, 11, 16, 11, 40, 32, 470, DateTimeKind.Local).AddTicks(3035),
+                            DateCreated = new DateTime(2023, 12, 5, 12, 23, 17, 720, DateTimeKind.Local).AddTicks(9597),
                             Details = "Set on a beautiful street with an amazing view to a sunset.",
                             ImageUrl = "https://cf.bstatic.com/xdata/images/hotel/max1280x900/295090917.jpg?k=d17621b71b0eaa0c7a37d8d8d02d33896cef75145f61e7d96d296d88375a7d39&o=&hp=1",
                             Name = "Royal Villa",
@@ -83,7 +80,7 @@ namespace MagicVilla_VillaAPI.Migrations
                         {
                             Id = 2,
                             Amenity = "",
-                            DateCreated = new DateTime(2023, 11, 16, 11, 40, 32, 470, DateTimeKind.Local).AddTicks(3089),
+                            DateCreated = new DateTime(2023, 12, 5, 12, 23, 17, 720, DateTimeKind.Local).AddTicks(9648),
                             Details = "Set on a green street.",
                             ImageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCwKconmBwaneB1wv1YNzCNnq9u013ul1l8FW07Y9XEY5WTIAS_75cb_vbz4FyU2nyzCM&usqp=CAU",
                             Name = "Green Villa",
@@ -96,7 +93,7 @@ namespace MagicVilla_VillaAPI.Migrations
                         {
                             Id = 3,
                             Amenity = "",
-                            DateCreated = new DateTime(2023, 11, 16, 11, 40, 32, 470, DateTimeKind.Local).AddTicks(3092),
+                            DateCreated = new DateTime(2023, 12, 5, 12, 23, 17, 720, DateTimeKind.Local).AddTicks(9651),
                             Details = "Set on a blue street.",
                             ImageUrl = "https://cf.bstatic.com/xdata/images/hotel/max1024x768/301483778.jpg?k=b1f449beb857de98e8287c34956b672956926c2d03ac185ff8d9a348622c157a&o=&hp=1",
                             Name = "Blue Villa",
@@ -109,7 +106,7 @@ namespace MagicVilla_VillaAPI.Migrations
                         {
                             Id = 4,
                             Amenity = "",
-                            DateCreated = new DateTime(2023, 11, 16, 11, 40, 32, 470, DateTimeKind.Local).AddTicks(3094),
+                            DateCreated = new DateTime(2023, 12, 5, 12, 23, 17, 720, DateTimeKind.Local).AddTicks(9653),
                             Details = "Set on a red street.",
                             ImageUrl = "https://image.architonic.com/prj2-3/20714433/swissfineline-reference--villalakezurich-pic01-villa-zurichsee-1-arcit18.jpg",
                             Name = "Red Villa",
@@ -122,7 +119,7 @@ namespace MagicVilla_VillaAPI.Migrations
                         {
                             Id = 5,
                             Amenity = "",
-                            DateCreated = new DateTime(2023, 11, 16, 11, 40, 32, 470, DateTimeKind.Local).AddTicks(3097),
+                            DateCreated = new DateTime(2023, 12, 5, 12, 23, 17, 720, DateTimeKind.Local).AddTicks(9655),
                             Details = "Set on an orange street.",
                             ImageUrl = "https://www.myistria.com/UserDocsImages/app/objekti/1384/slika_hd/06052022024444_Villa-in-Pula-Villa%20Old%20Olive%20I%20-%20n3.jpg?preset=carousel-1-webp",
                             Name = "Orange Villa",
@@ -142,15 +139,30 @@ namespace MagicVilla_VillaAPI.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("SpecialDetails")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedCreated")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("VillaID")
+                        .HasColumnType("int");
+
                     b.HasKey("VillaNo");
 
+                    b.HasIndex("VillaID");
+
                     b.ToTable("VillaNumbers");
+                });
+
+            modelBuilder.Entity("MagicVilla_VillaAPI.Models.VillaNumber", b =>
+                {
+                    b.HasOne("MagicVilla_VillaAPI.Models.Villa", "Villa")
+                        .WithMany()
+                        .HasForeignKey("VillaID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Villa");
                 });
 #pragma warning restore 612, 618
         }
