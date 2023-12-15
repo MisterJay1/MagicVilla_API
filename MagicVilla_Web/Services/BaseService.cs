@@ -15,7 +15,6 @@ namespace MagicVilla_Web.Services
         {
             responseModel = new();
             this.httpClient = httpClient;
-
         }
 
         public async Task<T> SendAsync<T>(APIRequest apiRequest)
