@@ -35,7 +35,7 @@ namespace MagicVilla_VillaAPI.Repository
 
             if (includeProperties != null)
             {
-                foreach( var includeProp in includeProperties.Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries))
+                foreach(var includeProp in includeProperties.Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries))
                 {
                     query.Include(includeProp);
                 }
