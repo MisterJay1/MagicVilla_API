@@ -4942,7 +4942,7 @@ var rscriptType = ( /^$|^module$|\/(?:java|ecma)script/i );
 // We have to close these tags to support XHTML (#13200)
 var wrapMap = {
 
-	// XHTML parsers do not magically insert elements in the
+	// XHTML parsers do not Sigmaally insert elements in the
 	// same way that tag soup parsers do. So we cannot shorten
 	// this by omitting <tbody> or other required elements.
 	thead: [ 1, "<table>", "</table>" ],

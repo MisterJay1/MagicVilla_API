@@ -20,10 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MagicVilla_Utility\MagicVilla_Utility.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <UpToDateCheckInput Remove="Views\Villa\CreateVilla.cshtml" />
   </ItemGroup>
 
@@ -33,6 +29,10 @@
 
   <ItemGroup>
     <None Include="Views\Villa\CreateVilla.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MagicVilla_Utility\SigmaVilla_Utility.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace MagicVilla_Utility
+﻿namespace SigmaVilla_Utility
 {
     public static class SD
     {

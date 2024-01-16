@@ -1,18 +1,18 @@
 ﻿using AutoMapper;
-using MagicVilla_Web.Models;
-using MagicVilla_Web.Models.Dto;
-using MagicVilla_Web.Models.VM;
-using MagicVilla_Web.Services;
-using MagicVilla_Web.Services.IServices;
+using SigmaVilla_Web.Models;
+using SigmaVilla_Web.Models.Dto;
+using SigmaVilla_Web.Models.VM;
+using SigmaVilla_Web.Services;
+using SigmaVilla_Web.Services.IServices;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Authorization;
-using MagicVilla_Utility;
+using SigmaVilla_Utility;
 
-namespace MagicVilla_Web.Controllers
+namespace SigmaVilla_Web.Controllers
 {
     public class VillaNumberController : Controller
     {

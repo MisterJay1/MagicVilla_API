@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MagicVilla_VillaAPI.Models
+namespace SigmaVilla_VillaAPI.Models
 {
     public class Villa
     {

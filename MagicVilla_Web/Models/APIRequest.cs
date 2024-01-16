@@ -1,6 +1,6 @@
-﻿using static MagicVilla_Utility.SD;
+﻿using static SigmaVilla_Utility.SD;
 
-namespace MagicVilla_Web.Models
+namespace SigmaVilla_Web.Models
 {
     public class APIRequest
     {

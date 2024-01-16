@@ -1,7 +1,7 @@
-﻿using MagicVilla_VillaAPI.Models;
-using MagicVilla_VillaAPI.Models.Dto;
+﻿using SigmaVilla_VillaAPI.Models;
+using SigmaVilla_VillaAPI.Models.Dto;
 
-namespace MagicVilla_VillaAPI.Repository.IRepository
+namespace SigmaVilla_VillaAPI.Repository.IRepository
 {
     public interface IUserRepository
     {

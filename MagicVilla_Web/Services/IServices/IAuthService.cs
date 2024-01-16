@@ -1,6 +1,6 @@
-﻿using MagicVilla_Web.Models.Dto;
+﻿using SigmaVilla_Web.Models.Dto;
 
-namespace MagicVilla_Web.Services.IServices
+namespace SigmaVilla_Web.Services.IServices
 {
     public interface IAuthService
     {

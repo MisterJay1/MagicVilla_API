@@ -1,11 +1,11 @@
-﻿using MagicVilla_Utility;
-using MagicVilla_Web.Models;
-using MagicVilla_Web.Services.IServices;
+﻿using SigmaVilla_Utility;
+using SigmaVilla_Web.Models;
+using SigmaVilla_Web.Services.IServices;
 using Newtonsoft.Json;
 using System.Text;
 using System.Text.Json.Serialization;
 
-namespace MagicVilla_Web.Services
+namespace SigmaVilla_Web.Services
 {
     public class BaseService : IBaseService
     {
@@ -21,7 +21,7 @@ namespace MagicVilla_Web.Services
         {
             try
             {
-                var client = this.httpClient.CreateClient("MagicAPI");
+                var client = this.httpClient.CreateClient("SigmaAPI");
                 HttpRequestMessage message = new();
                 message.Headers.Add("Accept", "application/json");
                 message.RequestUri = new Uri(apiRequest.Url);

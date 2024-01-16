@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace MagicVilla_VillaAPI.Migrations
+namespace SigmaVilla_VillaAPI.Migrations
 {
     /// <inheritdoc />
     public partial class SeedVillaTableWithDateCreated : Migration

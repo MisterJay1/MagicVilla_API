@@ -1,15 +1,15 @@
 ﻿using AutoMapper;
-using MagicVilla_VillaAPI.Data;
-using MagicVilla_VillaAPI.Models;
-using MagicVilla_VillaAPI.Models.Dto;
-using MagicVilla_VillaAPI.Repository.IRepository;
+using SigmaVilla_VillaAPI.Data;
+using SigmaVilla_VillaAPI.Models;
+using SigmaVilla_VillaAPI.Models.Dto;
+using SigmaVilla_VillaAPI.Repository.IRepository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace MagicVilla_VillaAPI.Repository
+namespace SigmaVilla_VillaAPI.Repository
 {
     public class UserRepository : IUserRepository
     {

@@ -1,9 +1,9 @@
-﻿using MagicVilla_Utility;
-using MagicVilla_Web.Models;
-using MagicVilla_Web.Models.Dto;
-using MagicVilla_Web.Services.IServices;
+﻿using SigmaVilla_Utility;
+using SigmaVilla_Web.Models;
+using SigmaVilla_Web.Models.Dto;
+using SigmaVilla_Web.Services.IServices;
 
-namespace MagicVilla_Web.Services
+namespace SigmaVilla_Web.Services
 {
     public class VillaService : BaseService, IVillaService
     {

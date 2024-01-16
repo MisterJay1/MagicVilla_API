@@ -1,6 +1,6 @@
-using MagicVilla_Web;
-using MagicVilla_Web.Services;
-using MagicVilla_Web.Services.IServices;
+using SigmaVilla_Web;
+using SigmaVilla_Web.Services;
+using SigmaVilla_Web.Services.IServices;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -1,8 +1,8 @@
-﻿using MagicVilla_VillaAPI.Models;
+﻿using SigmaVilla_VillaAPI.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace MagicVilla_VillaAPI.Data
+namespace SigmaVilla_VillaAPI.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

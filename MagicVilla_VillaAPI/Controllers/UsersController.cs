@@ -1,10 +1,10 @@
-﻿using MagicVilla_VillaAPI.Models;
-using MagicVilla_VillaAPI.Models.Dto;
-using MagicVilla_VillaAPI.Repository.IRepository;
+﻿using SigmaVilla_VillaAPI.Models;
+using SigmaVilla_VillaAPI.Models.Dto;
+using SigmaVilla_VillaAPI.Repository.IRepository;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
-namespace MagicVilla_VillaAPI.Controllers
+namespace SigmaVilla_VillaAPI.Controllers
 {
     [Route("/api/v{version:apiVersion}/UsersAuth")]
     [ApiController]

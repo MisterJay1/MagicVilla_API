@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using MagicVilla_VillaAPI.Models;
-using MagicVilla_VillaAPI.Models.Dto;
+using SigmaVilla_VillaAPI.Models;
+using SigmaVilla_VillaAPI.Models.Dto;
 
-namespace MagicVilla_VillaAPI
+namespace SigmaVilla_VillaAPI
 {
     public class MappingConfig : Profile
     {

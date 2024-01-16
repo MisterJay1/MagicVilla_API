@@ -1,8 +1,8 @@
-using MagicVilla_VillaAPI;
-using MagicVilla_VillaAPI.Data;
-using MagicVilla_VillaAPI.Models;
-using MagicVilla_VillaAPI.Repository;
-using MagicVilla_VillaAPI.Repository.IRepository;
+using SigmaVilla_VillaAPI;
+using SigmaVilla_VillaAPI.Data;
+using SigmaVilla_VillaAPI.Models;
+using SigmaVilla_VillaAPI.Repository;
+using SigmaVilla_VillaAPI.Repository.IRepository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -101,7 +101,7 @@ builder.Services.AddSwaggerGen(options => {
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1.0",
-        Title = "Magic Villa V1",
+        Title = "Sigma Villa V1",
         Description = "API to manage Villa",
         TermsOfService = new Uri("https://example.com/terms"),
         Contact = new OpenApiContact
@@ -118,7 +118,7 @@ builder.Services.AddSwaggerGen(options => {
     options.SwaggerDoc("v2", new OpenApiInfo
     {
         Version = "v2.0",
-        Title = "Magic Villa V2",
+        Title = "Sigma Villa V2",
         Description = "API to manage Villa",
         TermsOfService = new Uri("https://example.com/terms"),
         Contact = new OpenApiContact
@@ -141,8 +141,8 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(options => {
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Magic_VillaV1");
-        options.SwaggerEndpoint("/swagger/v2/swagger.json", "Magic_VillaV2");
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Sigma_VillaV1");
+        options.SwaggerEndpoint("/swagger/v2/swagger.json", "Sigma_VillaV2");
     });
 }
 

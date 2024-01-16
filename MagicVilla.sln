@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagicVilla_VillaAPI", "MagicVilla_VillaAPI\MagicVilla_VillaAPI.csproj", "{A06947FB-A18F-44C4-AACE-B898EEE0B4BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SigmaVilla_VillaAPI", "MagicVilla_VillaAPI\SigmaVilla_VillaAPI.csproj", "{A06947FB-A18F-44C4-AACE-B898EEE0B4BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicVilla_Web", "MagicVilla_Web\MagicVilla_Web.csproj", "{6610A78B-E365-4085-A434-A8258C940C68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SigmaVilla_Web", "MagicVilla_Web\SigmaVilla_Web.csproj", "{6610A78B-E365-4085-A434-A8258C940C68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicVilla_Utility", "MagicVilla_Utility\MagicVilla_Utility.csproj", "{8A5F6019-03E2-4A31-9551-4ACBF36634C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SigmaVilla_Utility", "MagicVilla_Utility\SigmaVilla_Utility.csproj", "{8A5F6019-03E2-4A31-9551-4ACBF36634C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
